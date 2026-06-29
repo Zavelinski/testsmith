@@ -1,0 +1,22 @@
+{
+  "name": "testsmith",
+  "owner": {
+    "name": "Gabriel Zavelinski"
+  },
+  "metadata": {
+    "description": "Marketplace hosting the testsmith plugin."
+  },
+  "plugins": [
+    {
+      "name": "testsmith",
+      "description": "Adversarial test generation: failing test first, then a test-vs-mutant loop yields few high-value tests.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Gabriel Zavelinski"
+      },
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/Zavelinski/testsmith"
+    }
+  ]
+}

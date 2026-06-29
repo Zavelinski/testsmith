@@ -1,0 +1,20 @@
+{
+  "name": "testsmith",
+  "version": "0.1.0",
+  "description": "Adversarial test generation for Claude Code: reproduce the bug with a failing test first, then a test-vs-mutant loop produces FEW high-value tests tied to the change, not many shallow ones.",
+  "author": {
+    "name": "Gabriel Zavelinski"
+  },
+  "homepage": "https://github.com/Zavelinski/testsmith",
+  "repository": "https://github.com/Zavelinski/testsmith",
+  "license": "MIT",
+  "keywords": [
+    "testing",
+    "adversarial",
+    "mutation-testing",
+    "tdd",
+    "fault-detection",
+    "claude-code",
+    "verification"
+  ]
+}
