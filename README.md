@@ -1,5 +1,10 @@
 # testsmith
 
+[![License: MIT](https://img.shields.io/github/license/Zavelinski/testsmith)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/Zavelinski/testsmith?style=flat)](https://github.com/Zavelinski/testsmith/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/Zavelinski/testsmith)](https://github.com/Zavelinski/testsmith/commits)
+[![Claude Code skill](https://img.shields.io/badge/Claude%20Code-skill-8A2BE2)](https://claude.com/claude-code)
+
 Adversarial, high-value test generation for Claude Code. Reproduce the bug with a failing test first, then run a test-vs-mutant loop that yields FEW tests that actually catch defects, instead of an explosion of shallow ones.
 
 ## Why
@@ -12,17 +17,23 @@ AdverTest (a test generator vs a mutant generator, guided by coverage + mutation
 
 Skill-only by design: no always-on overlay, zero per-session cost.
 
-## Install (Claude Code, local directory marketplace)
+## Install
 
-```jsonc
-// ~/.claude/settings.json
-"extraKnownMarketplaces": {
-  "testsmith": { "source": { "source": "directory", "path": "C:\\Users\\<you>\\testsmith" } }
-},
-"enabledPlugins": { "testsmith@testsmith": true }
+### Option 1 — claude-code-skills marketplace (recommended)
+
+```bash
+/plugin marketplace add Zavelinski/claude-code-skills
+/plugin install testsmith@claude-code-skills
 ```
 
-Or after publishing: `"source": { "source": "github", "repo": "<you>/testsmith" }`.
+Update later with `/plugin marketplace update claude-code-skills`.
+
+### Option 2 — standalone marketplace
+
+```bash
+/plugin marketplace add Zavelinski/testsmith
+/plugin install testsmith@testsmith
+```
 
 ## Usage
 
@@ -35,3 +46,7 @@ Mutation testing approximates real faults; it does not prove correctness. The Ad
 ## License
 
 MIT
+
+---
+
+Part of the **[claude-code-skills](https://github.com/Zavelinski/claude-code-skills)** collection: a suite of focused, original Claude Code skills.
